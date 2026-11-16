@@ -1,6 +1,6 @@
 # Secure multi-site enterprise network (GNS3)
 
-Academic project, ISET Nabeul (November 2025). A virtual enterprise network built in GNS3 and
+Internship project at Tunisie Telecom (January 2025). A virtual enterprise network built in GNS3 and
 VirtualBox: two company sites connected through a service provider's MPLS backbone, an encrypted
 backup link between the sites, a protected server network, and a penetration test of the result.
 
