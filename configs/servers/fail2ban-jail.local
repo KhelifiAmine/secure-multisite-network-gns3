@@ -1,0 +1,14 @@
+# /etc/fail2ban/jail.local
+[DEFAULT]
+bantime = 3600
+maxretry = 3
+findtime = 600
+banaction = ufw
+
+[sshd]
+enabled = true
+port = ssh
+logpath = var/log/auth.log
+maxretry = 3
+bantime = 3600
+

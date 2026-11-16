@@ -1,0 +1,18 @@
+$ sudo ufw status numbered
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 22/tcp                     ALLOW IN    Anywhere
+[ 2] 5060                       ALLOW IN    10.10.10.0/24              # SIP TCP/UDP from LAN
+[ 3] 5061                       ALLOW IN    10.10.10.0/24              # SIP TLS from LAN
+[ 4] 10000:20000/udp            ALLOW IN    10.10.10.0/24              # RTP Media Range from LAN
+[ 5] 21                         ALLOW IN    10.10.10.0/24              # FTP from LAN
+[ 6] 30000:31000/tcp            ALLOW IN    10.10.10.0/24              # FTP Passive Ports from LAN
+[ 7] 80                         ALLOW IN    10.10.10.0/24              # HTTP from LAN
+[ 8] 443                        ALLOW IN    10.10.10.0/24              # HTTPS from LAN
+[ 9] 8080                       ALLOW IN    10.10.10.0/24              # Apache Backend
+[10] 8081                       ALLOW IN    10.10.10.0/24              # Backend 1
+[11] 8082                       ALLOW IN    10.10.10.0/24              # Backend 2
+[12] 8083                       ALLOW IN    10.10.10.0/24              # Backend 3
+[13] 22/tcp (v6)                ALLOW IN    Anywhere (v6)
